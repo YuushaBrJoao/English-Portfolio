@@ -15,10 +15,80 @@
   <script type="module" src="script.js"></script>
 
   <style>
-    /*
-      Project Page
-      Additional styling specific to the B Corp case study.
-    */
+
+    /* =========================================
+       INDEX PAGE VISUAL ELEMENTS
+       Header / Navigation / Footer
+    ========================================== */
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      color: white;
+    }
+
+    header img {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      border: 4px solid white;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    nav a.active {
+      color: #00bcd4;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer h2 {
+      color: white;
+      border-bottom: none;
+      margin-top: 0;
+      padding-bottom: 0;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contato p {
+      margin: 0.5rem 0;
+      color: white;
+    }
+
+
+    /* =========================================
+       B CORP PROJECT PAGE
+    ========================================== */
 
     .project-page {
       max-width: 900px;
@@ -72,7 +142,6 @@
     .project-section h3 {
       margin-top: 1.5rem;
       margin-bottom: 0.5rem;
-      color: #222;
     }
 
     .project-section p {
@@ -98,19 +167,38 @@
       font-size: 0.9rem;
     }
 
-    .contato p {
-      margin: 0.5rem 0;
+
+    /* =========================================
+       MOBILE
+    ========================================== */
+
+    @media (max-width: 600px) {
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      header img {
+        height: 150px;
+        width: 150px;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- =========================
+
+  <!-- =========================================
        HEADER
-  ========================== -->
+  ========================================== -->
 
   <header>
+
     <img src="Perfil2025.jpeg" alt="Profile Picture" />
 
     <h1>
@@ -120,27 +208,35 @@
     <h3>
       <span>Game Designer | Level Designer | QA Tester | Game Developer</span>
     </h3>
+
   </header>
 
 
-  <!-- =========================
+  <!-- =========================================
        NAVIGATION
-  ========================== -->
+  ========================================== -->
 
   <nav>
+
     <a href="index.html">Home</a>
+
     <a href="Curriculum.html">Resume</a>
+
     <a href="Skills.html">Skills</a>
-    <a href="Projects.html">Projects</a>
+
+    <a href="Projects.html" class="active">Projects</a>
+
     <a href="Extra.html">Extras</a>
+
   </nav>
 
 
-  <!-- =========================
+  <!-- =========================================
        MAIN CONTENT
-  ========================== -->
+  ========================================== -->
 
   <main class="project-page">
+
 
     <a href="Projects.html" class="back-link">
       ← Back to Projects
@@ -163,10 +259,10 @@
       </p>
 
       <img
-          src="https://static.wixstatic.com/media/283527_63e06a1fd76c4ac8bc1b3814b89bc7a2~mv2.jpg/v1/fill/w_548,h_306,al_c,lg_1,q_80,enc_avif,quality_auto/bcopr_edited.jpg"
-          alt="B Corp Game Image"
-        />
-
+        src="images/BCorp.png"
+        alt="B Corp Game"
+        class="project-image"
+      />
 
     </section>
 
@@ -351,14 +447,12 @@
         environment.
       </p>
 
-
       <h3>Shooting</h3>
 
       <p>
         The protagonist could use a weapon to defeat enemies, open paths
         and interact with certain puzzle elements.
       </p>
-
 
       <h3>Hacking</h3>
 
@@ -372,7 +466,6 @@
         I designed the concept of the mechanic, while its programming
         and implementation were handled by another member of the team.
       </p>
-
 
       <h3>Item Delivery</h3>
 
@@ -465,7 +558,7 @@
     </section>
 
 
-    <!-- TEAM -->
+    <!-- TEAM COLLABORATION -->
 
     <section class="project-section">
 
@@ -559,9 +652,9 @@
   </main>
 
 
-  <!-- =========================
+  <!-- =========================================
        FOOTER
-  ========================== -->
+  ========================================== -->
 
   <footer>
 
@@ -603,4 +696,3 @@
 
 </body>
 </html>
-
