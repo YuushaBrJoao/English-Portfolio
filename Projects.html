@@ -1,172 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Projects</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        background-color: #f5f5f5;
-        color: #333;
-      }
 
-      header {
-        text-align: center;
-        padding: 2rem 1rem;
-        background-color: #111;
-        color: white;
-      }
+<head>
+  <title>Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
 
-      header img {
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
-        object-fit: cover;
-        border: 4px solid white;
-      }
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
 
-      nav {
-        background-color: #222;
-        padding: 1rem;
-        text-align: center;
-      }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
 
-      nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-        font-weight: bold;
-      }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      color: white;
+    }
 
-      nav a:hover {
-        color: #00bcd4;
-      }
+    header img {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      border: 4px solid white;
+    }
 
-      main {
-        max-width: 900px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
+    nav {
+      background-color: #222;
+      padding: 1rem;
+      text-align: center;
+    }
 
-      h2 {
-        color: #0077cc;
-      }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
 
-      footer {
-        background-color: #111;
-        color: white;
-        padding: 2rem 1rem;
-        text-align: center;
-      }
+    nav a:hover {
+      color: #00bcd4;
+    }
 
-      footer a {
-        color: #00bcd4;
-        text-decoration: none;
-      }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
 
-      footer a:hover {
-        text-decoration: underline;
-      }
+    .projects-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #0077cc;
+    }
 
-      .contato p {
-        margin: 0.5rem 0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="Perfil2025.jpeg" alt="Profile picture" />
-      <h1><span>João Victor Moitas de Araujo</span></h1>
-      <h3><span>Game Designer | Level Designer | QA Tester | Game Developer</span></h3>
-    </header>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="Curriculum.html">Resume</a>
-      <a href="Skills.html">Skills</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Extra.html">Extras</a>
-    </nav>
+    .project-card {
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #fff;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-    <section id="projects" style="padding: 2rem; font-family: sans-serif;">
-      <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">🕹️ My Projects</h2>
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-        <!-- Project: B Corp -->
-        <div style="border: 1px solid #ccc; border-radius: 12px; background-color: #fff; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <img src="https://static.wixstatic.com/media/283527_63e06a1fd76c4ac8bc1b3814b89bc7a2~mv2.jpg/v1/fill/w_548,h_306,al_c,lg_1,q_80,enc_avif,quality_auto/bcopr_edited.jpg" alt="B Corp Game Image" style="width: 100%; height: 180px; object-fit: contain;">
-          <div style="padding: 1rem;">
-            <h3>B Corp</h3>
-            <p><strong>Type:</strong> Final Project – 3D Adventure Game</p>
-            <p>The game portrays a post-apocalyptic world where bees have disappeared, leading to a global crisis.</p>
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background-color: #f8f8f8;
+    }
+
+    .project-content {
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .project-content p {
+      margin: 0.5rem 0;
+    }
+
+    .role {
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .project-button {
+      display: inline-block;
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .project-button a {
+      display: inline-block;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    .project-button a:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contato p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <img src="Perfil2025.jpeg" alt="Profile picture" />
+
+    <h1>João Victor Moitas de Araujo</h1>
+
+    <h3>
+      Game Designer | Level Designer | QA Tester | Game Developer
+    </h3>
+
+  </header>
+
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="index.html">Home</a>
+    <a href="Curriculum.html">Resume</a>
+    <a href="Skills.html">Skills</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Extra.html">Extras</a>
+
+  </nav>
+
+
+  <!-- PROJECTS -->
+
+  <main>
+
+    <h2 class="projects-title">🕹️ My Projects</h2>
+
+    <div class="projects-grid">
+
+
+      <!-- ========================= -->
+      <!-- B CORP -->
+      <!-- ========================= -->
+
+      <div class="project-card">
+
+        <img
+          src="https://static.wixstatic.com/media/283527_63e06a1fd76c4ac8bc1b3814b89bc7a2~mv2.jpg/v1/fill/w_548,h_306,al_c,lg_1,q_80,enc_avif,quality_auto/bcopr_edited.jpg"
+          alt="B Corp Game Image"
+        />
+
+        <div class="project-content">
+
+          <h3>B Corp</h3>
+
+          <p>
+            <strong>Type:</strong>
+            Final Project – 3D Adventure Game
+          </p>
+
+          <p>
+            A 3D adventure game set in a post-apocalyptic world where
+            the disappearance of bees causes a global environmental crisis.
+          </p>
+
+          <p class="role">
+            My Role: Game Designer | Level Designer | Narrative Designer
+          </p>
+
+          <div class="project-button">
+            <a href="B-Corp.html">
+              View Project →
+            </a>
           </div>
+
         </div>
 
-        <!-- Project: Três Joias -->
-        <div style="border: 1px solid #ccc; border-radius: 12px; background-color: #fff; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <img src="https://static.wixstatic.com/media/283527_c4bd10eae0294b38b2e85cf2b200fa76~mv2.jpg/v1/crop/x_1,y_0,w_483,h_361/fill/w_484,h_364,al_c,lg_1,q_80,enc_avif,quality_auto/3joias_edited.jpg" alt="Three Jewels Board Game Image" style="width: 100%; height: 180px; object-fit: contain;">
-          <div style="padding: 1rem;">
-            <h3>Three Jewels</h3>
-            <p><strong>Type:</strong> Board Game Project</p>
-            <p>The goal is to gather the three jewels and become queen. The board shifts according to the cards drawn by players.</p>
-          </div>
-        </div>
-
-        <!-- Project: Esmerald -->
-        <div style="border: 1px solid #ccc; border-radius: 12px; background-color: #fff; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <img src="https://static.wixstatic.com/media/283527_c222f305f1284bc6b5506c392947e7d5~mv2.jpg/v1/fill/w_319,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/esmerald_edited.jpg" alt="Esmerald Game Image" style="width: 100%; height: 180px; object-fit: contain;">
-          <div style="padding: 1rem;">
-            <h3>Esmerald</h3>
-            <p><strong>Type:</strong> Coursework – 3D Game with 2D elements for mobile</p>
-            <p>This game aims to spark interest in mining by showing the value and process of acquiring gemstones in a fun and educational way.</p>
-          </div>
-        </div>
-
-        <!-- Project: Nightmare -->
-        <div style="border: 1px solid #ccc; border-radius: 12px; background-color: #fff; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <img src="https://static.wixstatic.com/media/283527_f3099be6858a4d80a684559900f04e6d~mv2.jpg/v1/fill/w_487,h_382,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/night_edited.jpg" alt="Nightmare Game Image" style="width: 100%; height: 180px; object-fit: contain;">
-          <div style="padding: 1rem;">
-            <h3>Nightmare</h3>
-            <p><strong>Type:</strong> Project – 2D Adventure Game</p>
-            <p>The player explores a haunted school and uncovers past traumas, facing and overcoming repressed memories.</p>
-          </div>
-        </div>
-
-        <!-- Project: Aurora -->
-        <div style="border: 1px solid #ccc; border-radius: 12px; background-color: #fff; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <img src="https://static.wixstatic.com/media/283527_595a281a1b3d4731b09777f7fc76f660~mv2.jpg/v1/fill/w_487,h_382,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/workkkgame_edited.jpg" alt="Aurora Game Image" style="width: 100%; height: 180px; object-fit: contain;">
-          <div style="padding: 1rem;">
-            <h3>Aurora</h3>
-            <p><strong>Type:</strong> Game Jam – 2D Game</p>
-            <p>The player transforms into geometric shapes and uses them to overcome obstacles and challenges.</p>
-          </div>
-        </div>
-
-        <!-- Project: Face the Fake -->
-        <div style="border: 1px solid #ccc; border-radius: 12px; background-color: #fff; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-          <img src="https://static.wixstatic.com/media/283527_3a16a0984f814adb95ab02b7ccb2306a~mv2.png/v1/fill/w_487,h_382,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/FacetheFakeMenu.png" alt="Face the Fake Game Image" style="width: 100%; height: 180px; object-fit: contain;">
-          <div style="padding: 1rem;">
-            <h3>Face the Fake</h3>
-            <p><strong>Type:</strong> Game Jam – 3D Game</p>
-            <p>The player faces off against enemies while trying to resist being corrupted by fake creatures.</p>
-          </div>
-        </div>
       </div>
+
+
+      <!-- ========================= -->
+      <!-- THREE JEWELS -->
+      <!-- ========================= -->
+
+      <div class="project-card">
+
+        <img
+          src="https://static.wixstatic.com/media/283527_c4bd10eae0294b38b2e85cf2b200fa76~mv2.jpg/v1/crop/x_1,y_0,w_483,h_361/fill/w_484,h_364,al_c,lg_1,q_80,enc_avif,quality_auto/3joias_edited.jpg"
+          alt="Three Jewels Board Game Image"
+        />
+
+        <div class="project-content">
+
+          <h3>Three Jewels</h3>
+
+          <p>
+            <strong>Type:</strong>
+            Board Game Project
+          </p>
+
+          <p>
+            The goal is to gather the three jewels and become queen.
+            The board shifts according to the cards drawn by players.
+          </p>
+
+          <p class="role">
+            My Role: Game Designer
+          </p>
+
+          <div class="project-button">
+            <a href="Three-Jewels.html">
+              View Project →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- ESMERALD -->
+      <!-- ========================= -->
+
+      <div class="project-card">
+
+        <img
+          src="https://static.wixstatic.com/media/283527_c222f305f1284bc6b5506c392947e7d5~mv2.jpg/v1/fill/w_319,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/esmerald_edited.jpg"
+          alt="Esmerald Game Image"
+        />
+
+        <div class="project-content">
+
+          <h3>Esmerald</h3>
+
+          <p>
+            <strong>Type:</strong>
+            Coursework – 3D Game with 2D elements for mobile
+          </p>
+
+          <p>
+            A game designed to spark interest in mining by showing
+            the value and process of acquiring gemstones in a fun
+            and educational way.
+          </p>
+
+          <p class="role">
+            My Role: Game Designer | Developer
+          </p>
+
+          <div class="project-button">
+            <a href="Esmerald.html">
+              View Project →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- NIGHTMARE -->
+      <!-- ========================= -->
+
+      <div class="project-card">
+
+        <img
+          src="https://static.wixstatic.com/media/283527_f3099be6858a4d80a684559900f04e6d~mv2.jpg/v1/fill/w_487,h_382,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/night_edited.jpg"
+          alt="Nightmare Game Image"
+        />
+
+        <div class="project-content">
+
+          <h3>Nightmare</h3>
+
+          <p>
+            <strong>Type:</strong>
+            Project – 2D Adventure Game
+          </p>
+
+          <p>
+            The player explores a haunted school and uncovers past
+            traumas while facing and overcoming repressed memories.
+          </p>
+
+          <p class="role">
+            My Role: Game Designer | Narrative Designer
+          </p>
+
+          <div class="project-button">
+            <a href="Nightmare.html">
+              View Project →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- AURORA -->
+      <!-- ========================= -->
+
+      <div class="project-card">
+
+        <img
+          src="https://static.wixstatic.com/media/283527_595a281a1b3d4731b09777f7fc76f660~mv2.jpg/v1/fill/w_487,h_382,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/workkkgame_edited.jpg"
+          alt="Aurora Game Image"
+        />
+
+        <div class="project-content">
+
+          <h3>Aurora</h3>
+
+          <p>
+            <strong>Type:</strong>
+            Game Jam – 2D Game
+          </p>
+
+          <p>
+            The player transforms into geometric shapes and uses
+            them to overcome obstacles and challenges.
+          </p>
+
+          <p class="role">
+            My Role: Game Designer | Level Designer | Developer
+          </p>
+
+          <div class="project-button">
+            <a href="Aurora.html">
+              View Project →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================= -->
+      <!-- FACE THE FAKE -->
+      <!-- ========================= -->
+
+      <div class="project-card">
+
+        <img
+          src="https://static.wixstatic.com/media/283527_3a16a0984f814adb95ab02b7ccb2306a~mv2.png/v1/fill/w_487,h_382,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/FacetheFakeMenu.png"
+          alt="Face the Fake Game Image"
+        />
+
+        <div class="project-content">
+
+          <h3>Face the Fake</h3>
+
+          <p>
+            <strong>Type:</strong>
+            Game Jam – 3D Game
+          </p>
+
+          <p>
+            The player faces off against enemies while trying to
+            resist being corrupted by fake creatures.
+          </p>
+
+          <p class="role">
+            My Role: Game Designer | Level Designer | Developer
+          </p>
+
+          <div class="project-button">
+            <a href="Face-the-Fake.html">
+              View Project →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <section class="contato">
+
+      <h2>📬 Contact Me</h2>
+
+      <p>
+        <a href="mailto:joao0856@hotmail.com">
+          joao0856@hotmail.com
+        </a>
+      </p>
+
+      <p>
+        <a href="tel:+5513991760240">
+          +55 (13) 99176-0240
+        </a>
+      </p>
+
+      <p>
+        <a href="https://wa.me/5513991760240">
+          Message me on WhatsApp
+        </a>
+      </p>
+
+      <p>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-araujo/">
+          My LinkedIn
+        </a>
+      </p>
+
     </section>
 
-    <footer>
-      <section class="contato">
-        <h2>📬 Contact Me</h2>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:joao0856@hotmail.com" target="_blank">joao0856@hotmail.com</a></p>
-        <p><i class="fas fa-phone"></i> <a href="tel:+5513991760240" target="_blank">+55 (13) 99176-0240</a></p>
-        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5513991760240" target="_blank">Message me on WhatsApp</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-araujo/" target="_blank">My LinkedIn</a></p>
-      </section>
-    </footer>
-  </body>
+  </footer>
+
+</body>
 </html>
