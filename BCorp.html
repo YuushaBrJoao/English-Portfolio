@@ -1,385 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B Corp - Project</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>B Corp | João Victor Araujo</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="module" src="script.js"></script>
+
+  <style>
+    /*
+      Project Page
+      Additional styling specific to the B Corp case study.
+    */
+
+    .project-page {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .project-header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-type {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 8px;
+    }
+
+    .project-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .project-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .project-section h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    .project-section p {
+      margin-bottom: 1rem;
+    }
+
+    .project-section ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    .role-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .role-tags span {
+      background-color: #222;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .contato p {
+      margin: 0.5rem 0;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <img src=Perfil2025.jpeg" alt="João Victor Moitas de Araujo">
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <img src="Perfil2025.jpeg" alt="Profile Picture" />
 
     <h1>
-        <span>João Victor Moitas de Araujo</span>
+      <span>João Victor Moitas de Araujo</span>
     </h1>
 
     <h3>
-        <span>Game Designer | Level Designer | QA Tester | Game Developer</span>
+      <span>Game Designer | Level Designer | QA Tester | Game Developer</span>
     </h3>
-</header>
+  </header>
 
-<nav>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav>
     <a href="index.html">Home</a>
     <a href="Curriculum.html">Resume</a>
     <a href="Skills.html">Skills</a>
     <a href="Projects.html">Projects</a>
     <a href="Extra.html">Extras</a>
-</nav>
+  </nav>
 
-<main class="project-page">
 
-    <a href="Projects.html" class="back-link">← Back to Projects</a>
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+
+  <main class="project-page">
+
+    <a href="Projects.html" class="back-link">
+      ← Back to Projects
+    </a>
+
+
+    <!-- PROJECT HEADER -->
 
     <section class="project-header">
-        <h1>B Corp</h1>
 
-        <p class="project-type">
-            <strong>Type:</strong> Final Project – 3D Adventure Game
-        </p>
+      <h1>B Corp</h1>
 
-        <p>
-            B Corp is a 3D adventure game set in a post-apocalyptic world
-            affected by the disappearance of bees.
-        </p>
+      <p class="project-type">
+        <strong>Type:</strong> Final Project – 3D Adventure Game
+      </p>
 
-        <img
-            src="images/BCorp.png"
-            alt="B Corp Game"
-            class="project-image"
-        >
+      <p>
+        B Corp is a 3D adventure game set in a post-apocalyptic world
+        affected by the disappearance of bees.
+      </p>
+
+      <img
+        src="images/BCorp.png"
+        alt="B Corp Game"
+        class="project-image"
+      />
+
     </section>
 
+
+    <!-- MY ROLE -->
 
     <section class="project-section">
-        <h2>My Role</h2>
 
-        <p>
-            B Corp was my graduation project, developed as part of a team of
-            six people. I worked primarily across Game Design, Level Design
-            and Narrative Design, collaborating with the other members
-            throughout development.
-        </p>
+      <h2>My Role</h2>
 
-        <p>
-            My responsibilities included designing gameplay mechanics,
-            characters, dialogue, minigames and level layouts. I also
-            contributed to the game's design documentation and participated
-            in discussions about how the different systems and narrative
-            elements should work together.
-        </p>
+      <p>
+        B Corp was my graduation project, developed as part of a team of
+        six people. I worked primarily across Game Design, Level Design
+        and Narrative Design, collaborating with the other members
+        throughout development.
+      </p>
 
-        <div class="role-tags">
-            <span>Game Design</span>
-            <span>Level Design</span>
-            <span>Narrative Design</span>
-            <span>Gameplay Mechanics</span>
-            <span>Character Design</span>
-            <span>Dialogue Design</span>
-            <span>Minigames</span>
-        </div>
+      <p>
+        My responsibilities included designing gameplay mechanics,
+        characters, dialogue, minigames and level layouts. I also
+        contributed to the game's design documentation and participated
+        in discussions about how the different systems and narrative
+        elements should work together.
+      </p>
+
+      <div class="role-tags">
+        <span>Game Design</span>
+        <span>Level Design</span>
+        <span>Narrative Design</span>
+        <span>Gameplay Mechanics</span>
+        <span>Character Design</span>
+        <span>Dialogue Design</span>
+        <span>Minigames</span>
+      </div>
+
     </section>
 
+
+    <!-- GAME CONCEPT -->
 
     <section class="project-section">
-        <h2>Game Concept</h2>
 
-        <p>
-            The game takes place in a world where the disappearance of bees
-            has severely affected the environment. Without bees, much of the
-            world's fauna and flora has been negatively impacted, while
-            society has also experienced technological regression.
-        </p>
+      <h2>Game Concept</h2>
 
-        <p>
-            The protagonist believes that bees may still exist and eventually
-            discovers evidence that some of them survived. However, the
-            remaining bees are being kept by the leader of a settlement, who
-            uses them to maintain the village's power and position.
-        </p>
+      <p>
+        The game takes place in a world where the disappearance of bees
+        has severely affected the environment. Without bees, much of the
+        world's fauna and flora has been negatively impacted, while
+        society has also experienced technological regression.
+      </p>
 
-        <p>
-            The protagonist must infiltrate the settlement, navigate through
-            its different areas and eventually reach the castle to free the
-            remaining bees.
-        </p>
+      <p>
+        The protagonist believes that bees may still exist and eventually
+        discovers evidence that some of them survived. However, the
+        remaining bees are being kept by the leader of a settlement, who
+        uses them to maintain the village's power and position.
+      </p>
+
+      <p>
+        The protagonist must infiltrate the settlement, navigate through
+        its different areas and eventually reach the castle to free the
+        remaining bees.
+      </p>
+
     </section>
 
+
+    <!-- DESIGN CHALLENGE -->
 
     <section class="project-section">
-        <h2>Design Challenge</h2>
 
-        <p>
-            One of our main challenges was creating a post-apocalyptic world
-            that felt different from more conventional interpretations of
-            the genre.
-        </p>
+      <h2>Design Challenge</h2>
 
-        <p>
-            The project was initially considered a particularly difficult
-            theme by our professors. Rather than abandoning the concept, our
-            team decided to keep the idea and develop the world around the
-            consequences of the disappearance of bees.
-        </p>
+      <p>
+        One of our main challenges was creating a post-apocalyptic world
+        that felt different from more conventional interpretations of
+        the genre.
+      </p>
 
-        <p>
-            This led us to explore a world that was not simply destroyed,
-            but one that had stopped progressing and had gradually regressed
-            technologically.
-        </p>
+      <p>
+        Our professors pointed out that the theme would be particularly
+        challenging to develop. Even so, our team decided to keep the
+        concept and explore its potential instead of changing the core
+        idea.
+      </p>
+
+      <p>
+        This led us to explore a world that was not simply destroyed,
+        but one that had stopped progressing and had gradually regressed
+        technologically.
+      </p>
+
+      <p>
+        The disappearance of bees also affected the natural environment,
+        creating consequences for both fauna and flora and helping shape
+        the world in which the protagonist lives.
+      </p>
+
     </section>
 
+
+    <!-- DESIGN DECISIONS -->
 
     <section class="project-section">
-        <h2>Design Decisions</h2>
 
-        <p>
-            We wanted the disappearance of bees to be more than a background
-            element. It became one of the foundations of the game's world,
-            narrative and gameplay.
-        </p>
+      <h2>Design Decisions</h2>
 
-        <p>
-            One example was our initial idea of using bees as a gameplay
-            resource that could assist the protagonist. However, this would
-            conflict with the premise that bees had effectively disappeared
-            from the world.
-        </p>
+      <p>
+        We wanted the disappearance of bees to be more than a background
+        element. It became one of the foundations of the game's world,
+        narrative and gameplay.
+      </p>
 
-        <p>
-            We therefore decided to make the remaining bees an important
-            narrative element instead. Their existence became part of the
-            protagonist's motivation and the central objective of the story.
-        </p>
+      <p>
+        One of our initial ideas was to use bees as a gameplay resource
+        that could assist the protagonist. However, this conflicted with
+        the premise that bees had effectively disappeared from the world.
+      </p>
+
+      <p>
+        We therefore decided to make the remaining bees an important
+        narrative element instead. Their existence became part of the
+        protagonist's motivation and the central objective of the story.
+      </p>
+
     </section>
 
+
+    <!-- LEVEL DESIGN -->
 
     <section class="project-section">
-        <h2>Level Design</h2>
 
-        <p>
-            The game was divided into four main areas:
-        </p>
+      <h2>Level Design</h2>
 
-        <ul>
-            <li>Workers' Area</li>
-            <li>Security Area</li>
-            <li>Sewers</li>
-            <li>Castle</li>
-        </ul>
+      <p>
+        The game was divided into four main areas:
+      </p>
 
-        <p>
-            I participated directly in the Level Design of all of these areas,
-            working together with the other members of the team.
-        </p>
+      <ul>
+        <li>Workers' Area</li>
+        <li>Security Area</li>
+        <li>Sewers</li>
+        <li>Castle</li>
+      </ul>
 
-        <p>
-            The game's main mechanics were introduced early in the experience.
-            The player was gradually exposed to shooting, hacking, stealth
-            and environmental interaction before progressing further into
-            the game.
-        </p>
+      <p>
+        I participated directly in the Level Design of all of these areas,
+        working together with the other members of the team.
+      </p>
 
-        <p>
-            My Level Design contributions included working on layouts,
-            obstacle placement and challenge design. After implementation,
-            the programmer would test the areas and we would discuss possible
-            improvements and adjustments.
-        </p>
+      <p>
+        The game's main mechanics were introduced early in the experience.
+        The player was gradually exposed to shooting, hacking, stealth
+        and environmental interaction before progressing further into
+        the game.
+      </p>
 
-        <p>
-            The player had some freedom to explore the environments, although
-            the overall experience was primarily focused on the main missions.
-        </p>
+      <p>
+        My Level Design contributions included working on layouts,
+        obstacle placement and challenge design. After implementation,
+        the programmer would test the areas and we would discuss possible
+        improvements and adjustments.
+      </p>
+
+      <p>
+        The player had some freedom to explore the environments, although
+        the overall experience was primarily focused on the main missions.
+      </p>
+
     </section>
 
+
+    <!-- GAMEPLAY -->
 
     <section class="project-section">
-        <h2>Gameplay & Mechanics</h2>
 
-        <p>
-            I contributed to the design of several gameplay mechanics intended
-            to give the player different ways of interacting with the
-            environment.
-        </p>
+      <h2>Gameplay & Mechanics</h2>
 
-        <h3>Shooting</h3>
+      <p>
+        I contributed to the design of several gameplay mechanics intended
+        to give the player different ways of interacting with the
+        environment.
+      </p>
 
-        <p>
-            The protagonist could use a weapon to defeat enemies, open paths
-            and interact with certain puzzle elements.
-        </p>
 
-        <h3>Hacking</h3>
+      <h3>Shooting</h3>
 
-        <p>
-            I proposed a hacking mechanic involving a small device designed
-            in the shape of a bee. The player had to guide it from one point
-            to another without touching electrical wires.
-        </p>
+      <p>
+        The protagonist could use a weapon to defeat enemies, open paths
+        and interact with certain puzzle elements.
+      </p>
 
-        <p>
-            I designed the concept of the mechanic, while its programming
-            and implementation were handled by another member of the team.
-        </p>
 
-        <h3>Item Delivery</h3>
+      <h3>Hacking</h3>
 
-        <p>
-            Another gameplay interaction required the player to retrieve an
-            item and bring it to another location. This mechanic was used as
-            an additional form of interaction and progression within the
-            environment.
-        </p>
+      <p>
+        I proposed a hacking mechanic involving a small device designed
+        in the shape of a bee. The player had to guide it from one point
+        to another without touching electrical wires.
+      </p>
+
+      <p>
+        I designed the concept of the mechanic, while its programming
+        and implementation were handled by another member of the team.
+      </p>
+
+
+      <h3>Item Delivery</h3>
+
+      <p>
+        Another gameplay interaction required the player to retrieve an
+        item and bring it to another location. This mechanic was used as
+        an additional form of interaction and progression within the
+        environment.
+      </p>
+
     </section>
 
+
+    <!-- MINIGAMES -->
 
     <section class="project-section">
-        <h2>Minigames</h2>
 
-        <p>
-            The project included a hacking minigame designed around the
-            game's central bee theme.
-        </p>
+      <h2>Minigames</h2>
 
-        <p>
-            Instead of representing hacking through a conventional computer
-            interface, the player controlled a bee-shaped device and had to
-            navigate it through an electrical system without touching the
-            wires.
-        </p>
+      <p>
+        The project included a hacking minigame designed around the
+        game's central bee theme.
+      </p>
 
-        <p>
-            The goal was to provide gameplay variety while also reinforcing
-            the connection between the game's mechanics and its main theme.
-        </p>
+      <p>
+        Instead of representing hacking through a conventional computer
+        interface, the player controlled a bee-shaped device and had to
+        navigate it through an electrical system without touching the
+        wires.
+      </p>
+
+      <p>
+        The goal was to provide gameplay variety while also reinforcing
+        the connection between the game's mechanics and its main theme.
+      </p>
+
     </section>
 
+
+    <!-- NARRATIVE -->
 
     <section class="project-section">
-        <h2>Narrative Design</h2>
 
-        <p>
-            I worked on the game's story, characters and dialogue.
-        </p>
+      <h2>Narrative Design</h2>
 
-        <p>
-            The main characters included the protagonist, the leader of the
-            settlement, a librarian who helped the protagonist understand
-            the location and find information, and the protagonist's father,
-            who primarily provided emotional support.
-        </p>
+      <p>
+        I worked on the game's story, characters and dialogue.
+      </p>
 
-        <p>
-            My work focused on developing their personalities and backstories
-            and creating dialogue that supported the narrative and
-            worldbuilding.
-        </p>
+      <p>
+        The main characters included the protagonist, the leader of the
+        settlement, a librarian who helped the protagonist understand
+        the location and find information, and the protagonist's father,
+        who primarily provided emotional support.
+      </p>
 
-        <p>
-            With the exception of the tutorial dialogue, the conversations
-            were primarily focused on advancing the story and helping the
-            player understand the world and its characters.
-        </p>
+      <p>
+        My work focused on developing their personalities and backstories
+        and creating dialogue that supported the narrative and
+        worldbuilding.
+      </p>
+
+      <p>
+        With the exception of the tutorial dialogue, the conversations
+        were primarily focused on advancing the story and helping the
+        player understand the world and its characters.
+      </p>
+
     </section>
 
+
+    <!-- FINAL ENCOUNTER -->
 
     <section class="project-section">
-        <h2>Final Encounter</h2>
 
-        <p>
-            One of the encounters I particularly enjoyed was the final fight,
-            where the protagonist had to avoid shots from a machine while
-            using walls as cover.
-        </p>
+      <h2>Final Encounter</h2>
 
-        <p>
-            The encounter encouraged the player to pay attention to
-            positioning and movement rather than simply focusing on attacking
-            the enemy.
-        </p>
+      <p>
+        One of the encounters I particularly enjoyed was the final fight,
+        where the protagonist had to avoid shots from a machine while
+        using walls as cover.
+      </p>
+
+      <p>
+        The encounter encouraged the player to pay attention to
+        positioning and movement rather than simply focusing on attacking
+        the enemy.
+      </p>
+
     </section>
 
+
+    <!-- TEAM -->
 
     <section class="project-section">
-        <h2>Team Collaboration</h2>
 
-        <p>
-            B Corp was developed by a team of six people, with responsibilities
-            distributed according to each member's strengths.
-        </p>
+      <h2>Team Collaboration</h2>
 
-        <p>
-            Although I had freedom to propose and develop ideas within my
-            areas of responsibility, I regularly discussed my decisions with
-            my teammates and professor. This allowed us to review ideas,
-            identify possible improvements and keep the different parts of
-            the project connected.
-        </p>
+      <p>
+        B Corp was developed by a team of six people, with responsibilities
+        distributed according to each member's strengths.
+      </p>
+
+      <p>
+        Although I had freedom to propose and develop ideas within my
+        areas of responsibility, I regularly discussed my decisions with
+        my teammates and professor. This allowed us to review ideas,
+        identify possible improvements and keep the different parts of
+        the project connected.
+      </p>
+
+      <p>
+        This collaborative process was particularly important because
+        different areas of the project depended on each other. Gameplay,
+        Level Design and narrative decisions needed to work together
+        instead of being developed independently.
+      </p>
+
     </section>
 
+
+    <!-- WHAT I WOULD IMPROVE -->
 
     <section class="project-section">
-        <h2>What I Would Improve</h2>
 
-        <p>
-            If I were to continue developing B Corp, I would expand the game
-            before the main infiltration and final sequence.
-        </p>
+      <h2>What I Would Improve</h2>
 
-        <p>
-            I would add more optional missions and activities within the
-            settlement, giving players additional reasons to explore the
-            different areas and learn more about the world.
-        </p>
+      <p>
+        If I were to continue developing B Corp, I would expand the game
+        before the main infiltration and final sequence.
+      </p>
 
-        <p>
-            I would also use these activities to gradually introduce and
-            reinforce the game's mechanics before the player reaches the
-            castle.
-        </p>
+      <p>
+        I would add more optional missions and activities within the
+        settlement, giving players additional reasons to explore the
+        different areas and learn more about the world.
+      </p>
 
-        <p>
-            This would give the experience more room to develop its world,
-            strengthen the player's connection with the protagonist's
-            objective and make the progression feel more complete.
-        </p>
+      <p>
+        I would also use these activities to gradually introduce and
+        reinforce the game's mechanics before the player reaches the
+        castle.
+      </p>
+
+      <p>
+        This would give the experience more room to develop its world,
+        strengthen the player's connection with the protagonist's
+        objective and make the progression feel more complete.
+      </p>
+
     </section>
 
+
+    <!-- WHAT I LEARNED -->
 
     <section class="project-section">
-        <h2>What I Learned</h2>
 
-        <p>
-            B Corp was an important experience for me because it required
-            different areas of game development to work together. Designing
-            mechanics, levels and narrative independently was not enough;
-            they needed to support the same world and player experience.
-        </p>
+      <h2>What I Learned</h2>
 
-        <p>
-            The project also taught me the importance of iteration and
-            collaboration. Even when I had an idea for a mechanic, level or
-            narrative element, discussing it with the team and testing it
-            helped us identify opportunities for improvement.
-        </p>
+      <p>
+        B Corp was an important experience for me because it required
+        different areas of game development to work together. Designing
+        mechanics, levels and narrative independently was not enough;
+        they needed to support the same world and player experience.
+      </p>
+
+      <p>
+        The project also taught me the importance of iteration and
+        collaboration. Even when I had an idea for a mechanic, level or
+        narrative element, discussing it with the team and testing it
+        helped us identify opportunities for improvement.
+      </p>
+
+      <p>
+        Most importantly, the project taught me how important it is to
+        maintain consistency between a game's narrative premise and its
+        gameplay. The decision to make the remaining bees part of the
+        story rather than a common gameplay resource was one example of
+        this approach.
+      </p>
+
     </section>
 
-</main>
+  </main>
 
 
-<footer>
-    <p>
-        © 2026 João Victor Moitas de Araujo
-    </p>
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-    <p>
-        <a href="mailto:joao0856@hotmail.com">joao0856@hotmail.com</a>
-    </p>
-</footer>
+  <footer>
+
+    <section class="contato">
+
+      <h2>📬 Get in Touch</h2>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:joao0856@hotmail.com" target="_blank">
+          joao0856@hotmail.com
+        </a>
+      </p>
+
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+5513991760240" target="_blank">
+          +55 (13) 99176-0240
+        </a>
+      </p>
+
+      <p>
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/5513991760240" target="_blank">
+          Message me on WhatsApp
+        </a>
+      </p>
+
+      <p>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-araujo/" target="_blank">
+          My LinkedIn
+        </a>
+      </p>
+
+    </section>
+
+  </footer>
 
 </body>
 </html>
-```
+
