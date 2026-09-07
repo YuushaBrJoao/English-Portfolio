@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aurora | João Victor Araujo</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .project-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .project-header h2 {
+      border-bottom: none;
+      margin-bottom: .5rem;
+    }
+
+    .project-subtitle {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .project-section {
+      margin-bottom: 2rem;
+    }
+
+    .role-box {
+      background-color: #f5f5f5;
+      border-left: 5px solid #0077cc;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0 2rem;
+    }
+
+    .highlight-box {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .project-navigation {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .project-navigation a {
+      display: inline-block;
+      background-color: #111;
+      color: white;
+      text-decoration: none;
+      padding: .7rem 1.2rem;
+      border-radius: 6px;
+      margin: .3rem;
+      transition: background-color .3s ease;
+    }
+
+    .project-navigation a:hover {
+      background-color: #0077cc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="Perfil2025.jpeg" alt="Profile Picture" />
+
+    <h1>
+      <span>João Victor Moitas de Araujo</span>
+    </h1>
+
+    <h3>
+      <span>Game Designer | Level Designer | QA Tester | Game Developer</span>
+    </h3>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Curriculum.html">Resume</a>
+    <a href="Skills.html">Skills</a>
+    <a href="Projects.html" class="active">Projects</a>
+    <a href="Extra.html">Extras</a>
+  </nav>
+
+  <main>
+
+    <div class="project-header">
+      <h2>Aurora</h2>
+
+      <p class="project-subtitle">
+        Game Jam – 2D Gameplay Prototype
+      </p>
+    </div>
+
+    <section class="project-section">
+      <h2>Game Concept</h2>
+
+      <p>
+        <strong>Aurora</strong> is a 2D gameplay prototype built around
+        geometric shapes and character transformation.
+      </p>
+
+      <p>
+        The player controls a character that can switch between different
+        geometric forms while moving through a single-screen environment.
+      </p>
+
+      <p>
+        The main gameplay challenge is to move around the environment while
+        shapes continuously fall from above. The player must switch to the
+        correct form before collecting a shape.
+      </p>
+
+      <div class="highlight-box">
+        <h3>Core Gameplay Loop</h3>
+
+        <p>
+          Move → Observe the falling shape → Change form → Collect the correct
+          shape → Gain points and power.
+        </p>
+
+        <p>
+          Collecting an incorrect shape causes the player to lose points.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>My Role</h2>
+
+      <div class="role-box">
+        <p>
+          <strong>Game Designer | Gameplay Designer | Enemy & Obstacle Design</strong>
+        </p>
+
+        <ul>
+          <li>Designed the gameplay mechanics for the character's forms.</li>
+          <li>Designed the powers associated with each geometric form.</li>
+          <li>Designed enemies planned for the gameplay experience.</li>
+          <li>Designed obstacles and gameplay challenges.</li>
+          <li>Contributed to the overall gameplay structure.</li>
+        </ul>
+      </div>
+
+      <p>
+        The project was developed by a small team of approximately four
+        people during a Game Jam.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Transformation System</h2>
+
+      <p>
+        The character could switch between different geometric forms by
+        pressing a button.
+      </p>
+
+      <p>
+        The main forms were the <strong>circle</strong>,
+        <strong>square</strong>, and <strong>triangle</strong>.
+      </p>
+
+      <p>
+        Each form was designed around a different power, creating a direct
+        connection between the character's current shape and its gameplay
+        capabilities.
+      </p>
+
+      <p>
+        The transformation mechanic was intended to become an important part
+        of the player's interaction with enemies and obstacles.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Shape Collection</h2>
+
+      <p>
+        The main gameplay interaction involved a continuous "rain" of
+        geometric shapes falling toward the player.
+      </p>
+
+      <p>
+        The player had to pay attention to the incoming shape and switch to
+        the matching form before it reached the character.
+      </p>
+
+      <p>
+        Successfully matching the shape rewarded the player with points,
+        while collecting the wrong shape resulted in a score penalty.
+      </p>
+
+      <p>
+        This encouraged the player to keep moving while simultaneously
+        monitoring the falling shapes and deciding when to transform.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Gameplay Challenge</h2>
+
+      <p>
+        One of the main design challenges was making the geometric theme
+        meaningful to the gameplay rather than using shapes only as a visual
+        element.
+      </p>
+
+      <p>
+        The transformation mechanic therefore became part of the core
+        gameplay loop: the player's current shape directly determined which
+        falling objects could be collected correctly.
+      </p>
+
+      <p>
+        The intended progression was to combine this system with enemies and
+        obstacles, requiring players to manage both shape matching and
+        environmental threats.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Enemies & Obstacles</h2>
+
+      <p>
+        I designed enemies and obstacles that were intended to complement the
+        transformation and power mechanics.
+      </p>
+
+      <p>
+        The player would eventually be able to use the powers associated with
+        the different forms to overcome these challenges.
+      </p>
+
+      <p>
+        Due to the limited development time of the Game Jam, the project did
+        not reach the stage where the complete enemy system and all planned
+        gameplay elements could be fully implemented.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Level Design</h2>
+
+      <p>
+        Aurora used a single-screen environment where the player could move
+        horizontally to the left and right.
+      </p>
+
+      <p>
+        The simplicity of the environment allowed the focus to remain on the
+        transformation mechanic, movement, and falling-shape interaction.
+      </p>
+
+      <p>
+        The intended enemy and obstacle systems would have expanded the
+        gameplay possibilities within this space.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Design Challenge</h2>
+
+      <p>
+        The main design challenge was creating a fun gameplay experience
+        around the Game Jam's geometric-shape theme.
+      </p>
+
+      <p>
+        Rather than making shapes purely cosmetic, the design connected them
+        directly to the player's abilities, score, and moment-to-moment
+        decisions.
+      </p>
+
+      <p>
+        Working under Game Jam time constraints also required prioritizing
+        the core mechanic over the complete implementation of the planned
+        enemy and progression systems.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Playtesting</h2>
+
+      <p>
+        The prototype was tested by the members of the development team
+        during the Game Jam.
+      </p>
+
+      <p>
+        These tests helped the team evaluate whether the core interaction
+        between movement, transformation, and shape collection was
+        understandable and enjoyable.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>What I Would Improve Today</h2>
+
+      <p>
+        If I were revisiting Aurora today, my main priority would be
+        completing the gameplay systems that could not be implemented during
+        the Game Jam.
+      </p>
+
+      <p>
+        I would expand the game into multiple stages, introduce the planned
+        enemies and obstacles, and create more situations where each
+        geometric power is required.
+      </p>
+
+      <p>
+        This would allow the transformation mechanic to evolve beyond the
+        initial shape-matching loop and become the foundation for a more
+        complete progression system.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Key Takeaway</h2>
+
+      <p>
+        Aurora was an opportunity to experiment with a gameplay system where
+        visual identity and player mechanics were directly connected.
+      </p>
+
+      <p>
+        The project also reinforced the importance of prioritizing a strong
+        core mechanic during a Game Jam and understanding what can realistically
+        be completed within a limited development timeframe.
+      </p>
+
+      <p>
+        Even though the final prototype did not include every planned
+        feature, the transformation and shape-matching system established
+        the foundation for the game's intended gameplay experience.
+      </p>
+    </section>
+
+    <div class="project-navigation">
+      <a href="Projects.html">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+
+    <section class="contato">
+
+      <h2>📬 Get in Touch</h2>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:joao0856@hotmail.com">
+          joao0856@hotmail.com
+        </a>
+      </p>
+
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+5513991760240">
+          +55 (13) 99176-0240
+        </a>
+      </p>
+
+      <p>
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/5513991760240" target="_blank">
+          Message me on WhatsApp
+        </a>
+      </p>
+
+      <p>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-araujo/"
+           target="_blank">
+          My LinkedIn
+        </a>
+      </p>
+
+    </section>
+
+  </footer>
+
+</body>
+</html>
